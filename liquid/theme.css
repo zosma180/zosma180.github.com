@@ -1,0 +1,11 @@
+.bkg-cover {
+  background-image: url("assets/bkg-cover.jpg");
+}
+
+.bkg-slide {
+  background-image: url("assets/bkg-slide.jpg");
+}
+
+.bkg-end {
+  background-image: url("assets/bkg-end.jpg");
+}
