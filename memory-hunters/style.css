@@ -1,0 +1,131 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  background-color: #222;
+  color: white;
+  font-family: 'Courier New', Courier, monospace, sans-serif;
+}
+
+a, a:hover, a:visited {
+  color: #EEE;
+  text-decoration: none;
+}
+
+.jumbotron {
+  align-items: center;
+  background: url(assets/world-map.jpg) no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px 0;
+  width: 100%;
+}
+
+.jumbotron > * {
+  z-index: 1;
+}
+
+.jumbotron::before {
+  background-color: #0006;
+  content: '';
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.logo {
+  max-width: 100%;
+}
+
+.actions {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.action-btn {
+  align-items: center;
+  background-color: #333;
+  border-radius: 10px;
+  color: white;
+  display: inline-flex;
+  font-size: 24px;
+  height: 70px;
+  padding: 0 20px;
+  transition: all 0.7s;
+}
+
+.action-btn.secondary {
+  background-color: #ff3c00;
+}
+
+.action-btn:hover {
+  transform: scale(1.1);
+}
+
+.action-logo {
+  height: 40px;
+  margin: 20px;
+}
+
+span.donate-icon {
+  font-size: 40px;
+  margin-left: 15px;
+}
+
+.donate-text {
+  color: #DDD;
+  margin-top: 20px;
+  text-align: center;
+}
+
+main {
+  margin-top: 50px;
+  max-width: 100%;
+  width: 800px;
+}
+
+iframe {
+  height: 450px;
+  width: 100%;
+}
+
+blockquote {
+  align-items: flex-start;
+  display: flex;
+  margin: 50px 0 0 0 ;
+}
+
+blockquote p {
+  font-style: italic;
+  margin: 0 0 0 10px;
+}
+
+.quote-icon {
+  font-size: 70px !important;
+}
+
+.description {
+  font-size: 18px;
+  margin-top: 50px;
+}
+
+.description ul {
+  margin: 40px 0;
+}
+
+.link {
+  border-bottom: 1px solid white;
+  display: inline-block;
+}
