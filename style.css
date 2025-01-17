@@ -70,7 +70,7 @@ a, a:hover, a:visited {
   background-color: #111;
   display: grid;
   gap: 2px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .slot {
@@ -78,10 +78,10 @@ a, a:hover, a:visited {
   background-color: black;
   box-sizing: border-box;
   display: flex;
-  height: 350px;
   justify-content: center;
   overflow: hidden;
   position: relative;
+  padding: 50px;
   width: 100%;
 }
 
@@ -105,12 +105,13 @@ a, a:hover, a:visited {
   box-sizing: border-box;
   color: #FFF;
   display: flex;
+  flex-direction: column;
   gap: 20px;
   justify-content: center;
-  max-width: 100%;
+  max-width: 400px;
   padding: 20px;
   position: relative;
-  width: 500px;
+  text-align: center;
 }
 
 .slot-logo {
@@ -122,12 +123,34 @@ a, a:hover, a:visited {
   margin-top: 0;
 }
 
-.jackknife {
-  background-color: #ee3237;
+.slot-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.slot-text > * {
+  margin: 0;
+}
+
+.crypta {
+  background-color: #009688;
+}
+
+.spacetime {
+  background-color: #555;
+}
+
+.space-hunters {
+  background-color: #222;
 }
 
 .jgloo {
   background-color: #b6c5d8;
+}
+
+.jackknife {
+  background-color: #ee3237;
 }
 
 .liquid {
@@ -139,17 +162,7 @@ a, a:hover, a:visited {
     grid-template-columns: 1fr;
   }
 
-  .slot {
-    height: auto;
-  }
-}
-
-@media all and (max-width: 600px) {
-  .slot-content {
+  .horizontal-flex {
     flex-direction: column;
-  }
-
-  .slot-text {
-    text-align: center;
   }
 }

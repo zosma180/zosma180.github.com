@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1723418962379,
+  "timestamp": 1736948502872,
   "index": "/collapsar/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/collapsar/favicon.ico",
         "/collapsar/index.html",
-        "/collapsar/main.53b20c61c928d564.js",
+        "/collapsar/main.e05ca83f18220b5b.js",
         "/collapsar/manifest.webmanifest",
         "/collapsar/polyfills.40c9b43c0ef58d82.js",
         "/collapsar/runtime.34e32559c6db3874.js",
@@ -380,8 +380,8 @@
     "/collapsar/fontello.5bc6c568420f0038.ttf": "491e700068b24ab997824168035307335b609b66",
     "/collapsar/fontello.6e2b76d43e31e9ec.woff2": "2c17b7be6e6396ee53551078ae5475aa41488624",
     "/collapsar/fontello.fab7414d861aed25.svg": "9de775d6a57f9d711e908b7ba3d956fa19bc420e",
-    "/collapsar/index.html": "ae3779557bda07aa869fce84c4efb155009e41e1",
-    "/collapsar/main.53b20c61c928d564.js": "c12fc19315e88f2755b95cd42d58e4c2a7acf49a",
+    "/collapsar/index.html": "191c5a46aec64f585aadfc9697f8a71fe53c59a1",
+    "/collapsar/main.e05ca83f18220b5b.js": "ceebfdc4cfac4245cc76c584e15401a5b4167632",
     "/collapsar/manifest.webmanifest": "4f1fe530fbdc818031b39ffc843b5d70eafe2a88",
     "/collapsar/polyfills.40c9b43c0ef58d82.js": "e4687e82f5ab66b7f7285a566c7786163dd2d258",
     "/collapsar/runtime.34e32559c6db3874.js": "865ef4408e6c987c1136cd199deab9b7f5462fe0",
