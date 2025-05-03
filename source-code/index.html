@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="referrer" content="no-referrer">
+
+  <title>SourceCode - The Git Client</title>
+  <meta name="description" content="SourceCode is a git client designed to provide a clean-view and confortable management of the repositories..">
+  <meta name="keywords" content="source, code, git, client, versioning, tool, repository">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="logo.png" />
+  <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Encode+Sans+Semi+Expanded?query=code" />
+</head>
+
+<body>
+  <div class="jumbotron">
+    <div class="jumbotron-title">
+      <img
+        class="logo"
+        src="logo.png"
+        alt="SourceCode - Logo"
+      >
+
+      <h1>SourceCode</h1>
+
+      <span class="jumbotron-version">
+        v1.8.1
+      </span>
+    </div>
+    
+    <div>
+      <input type="checkbox" id="check">
+      I read and understood the
+      <a href="#disclaimer">disclaimer, design and limitations</a>.
+
+      <script>
+        document.getElementById('check').addEventListener('click', e => {
+          const links = Array.from(document.getElementsByClassName('download'));
+          links.forEach(link => {
+            const from = e.target.checked ? 'data-href' : 'href';
+            const to = e.target.checked ? 'href' : 'data-href';
+            link.setAttribute(to, link.getAttribute(from));
+            link.removeAttribute(from);
+          });;
+        });
+      </script>
+    </div>
+
+    <div class="actions">
+      <a
+        class="action-btn download"
+        title="Donwload for Windows"
+        data-href="https://github.com/zosma180/zosma180.github.com/releases/download/2025.01.11/SourceCode.181.win.zip"
+        target="_blank"
+      >
+        <img
+          class="action-logo"
+          src="logo-windows.png"
+          alt="Logo Windows"
+        >
+      </a>
+      
+      <a
+        class="action-btn download"
+        title="Donwload for macOS"
+        data-href="https://github.com/zosma180/zosma180.github.com/releases/download/2025.01.11/SourceCode.181.mac.zip"
+        target="_blank"
+      >
+        <img
+          class="action-logo"
+          src="logo-mac.png"
+          alt="Logo macOS"
+        >
+      </a>
+      
+      <a
+        class="action-btn download"
+        title="Donwload for Linux"
+        data-href="https://github.com/zosma180/zosma180.github.com/releases/download/2025.01.11/SourceCode.181.linux.zip"
+        target="_blank"
+      >
+        <img
+          class="action-logo"
+          src="logo-linux.png"
+          alt="Logo Linux"
+        >
+      </a>
+
+      <a
+        class="action-btn secondary"
+        title="Make a donation to support the developer"
+        href="https://www.paypal.com/donate/?business=4YKCL9U6VBATC&no_recurring=0&item_name=Passionate+software+developer+who+creates+free+applications+and+videogames.&currency_code=EUR"
+        target="_blank"
+      >
+        Make a donation
+        <span class="material-symbols-outlined donate-icon">heart_plus</span>
+      </a>
+    </div>
+
+    <div class="donate-text">
+      Please consider to donate to support my work.<br>
+      Created by
+      <a
+        href="../"
+        title="Go to main page"
+        target="_blank"
+      >
+        Luca
+      </a>.
+    </div>
+  </div>
+
+  <main>
+    <div class="gallery">
+      <img
+        class="gallery-image"
+        src="screen-1.jpg"
+        alt="Screen of the application"
+      >
+      
+      <img
+        class="gallery-image"
+        src="screen-2.jpg"
+        alt="Screen of the application"
+      >
+    </div>
+
+    <section class="description">
+
+      <p>
+        SourceCode is a <strong>git client</strong> designed to provide a clean-view and confortable management of the repositories.
+      </p>
+
+      <p>
+        The main features are:
+      </p>
+
+      <ul>
+        <li>Organize multiple repositories</li>
+        <li>Clean history graph</li>
+        <li>Branches management</li>
+        <li>Tags management</li>
+        <li>Stashes management</li>
+        <li>Stage management</li>
+        <li>Merge, rebase and reset.</li>
+        <li>Remote SSH control</li>
+        <li>Accessible</li>
+      </ul>
+
+      <p>
+        <a name="disclaimer">
+          Design and limitations:
+        </a>
+      </p>
+
+      <ul>
+        <li>
+          Currently it's supported only a single "origin" remote which cover most of the use cases
+        </li>
+        <li>
+          SSH is the only supported authentication method
+        </li>
+        <li>
+          In order to reduce the usual operations, the app sync all the local operation with the remote repository. This type of design is not suited for offline operativity
+        </li>
+      </ul>
+
+      <h3>Disclaimer</h3>
+
+      <p>
+        <small>
+          The software is provided "As is", without warranty of any kind, Express or implied, including but not limited to the warranties Of merchantability, fitness for a particular purpose and Noninfringement. In no event shall the authors or copyright Holders be liable for any claim, damages or other liability, Whether in an action of contract, tort or otherwise, arising From, out of or in connection with the software or the use or Other dealings in the software.
+        </small>
+      </p>
+
+    </section>
+  </main>
+</body>
+
+</html>

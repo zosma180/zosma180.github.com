@@ -1,0 +1,168 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  background-color: #EEE;
+  font-family: 'Major Mono Display', monospace;
+}
+
+a, a:hover, a:visited {
+  color: #EEE;
+  text-decoration: none;
+}
+
+.btn {
+  background-color: #003eba;
+  border-radius: 3px;
+  display: block;
+  flex-grow: 1;
+  flex-shrink: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+.btn.secondary {
+  background-color: #d20000;
+}
+
+.horizontal-flex {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.horizontal-flex.large {
+  gap: 30px;
+}
+
+.jumbotron {
+  background-color: #111;
+  color: #FFF;
+  padding: 30px 20px 40px 20px;
+  text-align: center;
+}
+
+.jumbotron h1 {
+  font-size: 36px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.jumbotron h1 img {
+  height: 100px;
+  vertical-align: middle;
+}
+
+.jumbotron p {
+  font-size: 16px;
+}
+
+.jumbotron p img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.list {
+  background-color: #111;
+  display: grid;
+  gap: 2px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.slot {
+  align-items: center;
+  background-color: black;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  padding: 50px;
+  width: 100%;
+}
+
+.slot-bkg {
+  height: 100%;
+  left: 50%;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+.slot-bkg.light {
+  opacity: 0.4;
+}
+
+.slot-content {
+  align-items: center;
+  background-color: #000B;
+  box-sizing: border-box;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  max-width: 400px;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+}
+
+.slot-logo {
+  height: 100px;
+}
+
+.slot-title {
+  font-size: 22px;
+  margin-top: 0;
+}
+
+.slot-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.slot-text > * {
+  margin: 0;
+}
+
+.crypta {
+  background-color: #009688;
+}
+
+.spacetime {
+  background-color: #555;
+}
+
+.space-hunters {
+  background-color: #222;
+}
+
+.jgloo {
+  background-color: #b6c5d8;
+}
+
+.jackknife {
+  background-color: #ee3237;
+}
+
+.liquid {
+  background-color: #0b94fe;
+}
+
+@media all and (max-width: 1000px) {
+  .list {
+    grid-template-columns: 1fr;
+  }
+
+  .horizontal-flex {
+    flex-direction: column;
+  }
+}
