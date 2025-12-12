@@ -41,6 +41,10 @@ a, a:hover, a:visited {
   width: 100%;
 }
 
+h1 {
+  margin: 0;
+}
+
 .logo {
   max-width: 100%;
 }
@@ -91,14 +95,13 @@ span.donate-icon {
 }
 
 main {
-  margin-top: 50px;
   max-width: 100%;
   width: 800px;
 }
 
-iframe {
-  height: 450px;
-  width: 100%;
+h2 {
+  font-size: larger;
+  margin-top: 70px;
 }
 
 blockquote {

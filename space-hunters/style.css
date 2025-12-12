@@ -88,13 +88,16 @@ span.donate-icon {
 }
 
 main {
-  margin-top: 50px;
   max-width: 100%;
   width: 800px;
 }
 
-.description ul {
-  margin: 40px 0;
+h2 {
+  margin-top: 80px;
+}
+
+li {
+  padding: 7px 0;
 }
 
 .link {
