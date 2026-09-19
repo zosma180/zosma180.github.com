@@ -118,6 +118,11 @@ a, a:hover, a:visited {
   height: 100px;
 }
 
+.slot-icon {
+  font-size: 88px;
+  line-height: 100px;
+}
+
 .slot-title {
   font-size: 22px;
   margin-top: 0;
@@ -143,6 +148,10 @@ a, a:hover, a:visited {
 
 .space-hunters {
   background-color: #222;
+}
+
+.elementum {
+  background-color: #1f3b57;
 }
 
 .jgloo {
