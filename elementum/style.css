@@ -68,6 +68,11 @@ a, a:hover, a:visited {
   transition: all 0.7s;
 }
 
+.coming-soon {
+  font-size: 24px;
+  margin: 0;
+}
+
 .action-btn.secondary {
   background-color: #ff3c00;
 }
