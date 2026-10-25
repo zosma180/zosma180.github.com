@@ -29,7 +29,7 @@
     </div>
     
     <div>
-      <input type="checkbox" id="check">
+      <input type="checkbox" id="check" autocomplete="off">
       
       <label for="check">
       I read and understood the
@@ -38,21 +38,23 @@
 
       <script>
         document.getElementById('check').addEventListener('click', e => {
-          const links = Array.from(document.getElementsByClassName('download'));
-          links.forEach(link => {
-            const from = e.target.checked ? 'data-href' : 'href';
-            const to = e.target.checked ? 'href' : 'data-href';
-            link.setAttribute(to, link.getAttribute(from));
-            link.removeAttribute(from);
-          });;
+          const anchor = document.getElementById('download');
+          const from = e.target.checked ? 'data-href' : 'href';
+          const to = e.target.checked ? 'href' : 'data-href';
+          
+          if (anchor.getAttribute(from)) {
+            anchor.setAttribute(to, anchor.getAttribute(from));
+            anchor.removeAttribute(from);
+          }
         });
       </script>
     </div>
 
     <div class="actions">
       <a
-        class="action-btn download"
-        data-href="https://github.com/zosma180/zosma180.github.com/releases/download/2026.10.25/SourceCode-23.zip"
+      id="download"  
+      class="action-btn"
+        data-href="https://github.com/zosma180/zosma180.github.com/releases/download/2026.10.25/source-code-23.zip"
         target="_blank"
       >
         Download v2.3 (25/10/2026)
