@@ -7,7 +7,7 @@ body {
 
 body {
   background-color: #EEE;
-  font-family: 'Major Mono Display', monospace;
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
 }
 
 a, a:hover, a:visited {
